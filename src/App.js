@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Categories from './Components/Categories'
-import { Route } from 'react-router-dom'
+// import { Route } from 'react-router-dom'
 import { withRouter } from 'react-router'
 // import Container from './Components/Container'
 //import Login from './Components/Login'
@@ -21,7 +21,6 @@ class App extends Component {
   logout = () => this.props.auth.logout()
 
   render() {
-    // debugger
     const { isAuthenticated } = this.props.auth
 
     return (
