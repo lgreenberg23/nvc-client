@@ -28,7 +28,7 @@ class App extends Component {
 
         <button
           className="btn-margin"
-          onClick={this.goTo.bind(this, 'home')}
+          onClick={this.goTo.bind(this, 'categories')}
         >
           Home
         </button>
