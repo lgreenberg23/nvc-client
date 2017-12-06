@@ -8,8 +8,9 @@ export default class Auth {
     clientID: AUTH_CONFIG.clientId,
     redirectUri: AUTH_CONFIG.callbackUrl,
     audience: `https://${AUTH_CONFIG.domain}/userinfo`,
-    responseType: 'token id_token',
-    scope: 'openid'
+    responseType: 'id_token token',
+    scope: 'openid'//,
+    // nonce: randomString(16)
   });
 
   constructor() {
@@ -61,4 +62,39 @@ export default class Auth {
     let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
   }
+
+  // function randomString(length) {
+  //   var bytes = new Uint8Array(length);
+  //   var random = window.crypto.getRandomValues(bytes);
+  //   var result = [];
+  //   var charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._~'
+  //   random.forEach(function (c) {
+  //       result.push(charset[c % charset.length]);
+  //   });
+  //   window.localStorage.setItem('nonce', randomString(16));
+  //   return result.join('');
+  // }
 }
+
+
+/*
+
+
+
+
+var jwt = '...'; // validated and decoded ID token body
+if (jwt.nonce === window.localStorage.getItem('nonce')) {
+    // Nonce is OK
+} else {
+    // Nonce is not OK! Token replay attack might be underway
+}
+
+
+<a href="https://backapi.auth0.com/authorize?scope=appointments%20
+contacts&audience=appointments:api&response_type=id_token%20token&
+client_id=V6jejsIB8khFOJwwdnox0pC3rRZoTSSz&
+redirect_uri=https://YOUR_APP/callback&nonce=12345789">
+  Sign In
+</a>
+
+*/
