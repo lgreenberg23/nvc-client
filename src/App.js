@@ -10,6 +10,14 @@ import Auth from './auth/Auth.js'
 
 
 class App extends Component {
+
+    render() {
+    return(
+      <Login/>
+    );
+  }
+}
+export default withRouter(App)
   
   // const auth = new Auth()
   // auth.login()
@@ -60,13 +68,7 @@ class App extends Component {
 
 // export default App
 
-  render() {
-    return(
-      <Login/>
-    );
-  }
-}
-export default withRouter(App)
+
         // <Route path='/' component={authenticated(Container)}/>
       // <div >
           // <Route exact path="/login" component={Login}/>

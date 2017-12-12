@@ -68,7 +68,7 @@ class Categories extends React.Component{
 	render(){
 		return(
 			<div>
-				<h1>Welcome to our NVC site</h1>
+				<h2>How are you feeling right now?</h2>
 				<br></br><button onClick={this.handleClick}>Fear</button>
 				<br></br><button onClick={this.handleClick}>Anger</button>
 				<br></br><button onClick={this.handleClick}>Disquiet</button>
