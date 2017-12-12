@@ -92,3 +92,34 @@ export function letMeIn(callback) {
       )
    }
 }
+
+
+function getParameterByName(name) {
+  var match = RegExp('[#&]' + name + '=([^&]*)').exec(window.location.hash);
+  return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function getAccessToken() {
+  return getParameterByName('access_token');
+}
+
+function getIdToken() {
+  return getParameterByName('id_token');
+}
+
+$(function () {
+  var access_token = getAccessToken();
+  var id_token = getIdToken();
+
+  // Use the access token to make API calls
+  // ...
+});
+
+
+
+// var jwt = '...'; // validated and decoded ID token body
+// if (jwt.nonce === window.localStorage.getItem('nonce')) {
+//     // Nonce is OK
+// } else {
+//     // Nonce is not OK! Token replay attack might be underway
+// }

@@ -1,4 +1,4 @@
-import auth0 from 'auth0-js';
+import auth0 from '../../node_modules/auth0-js/build/auth0.js';
 import history from '../history';
 import { AUTH_CONFIG } from './auth0-variables';
 

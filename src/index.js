@@ -10,8 +10,6 @@ import thunk from 'redux-thunk'
 import rootReducer from './reducers/rootReducer';  
 import { BrowserRouter as Router } from 'react-router-dom'
 
-
-
 // const rootReducer = combineReducers({users: usersReducer, something else must go here})
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
