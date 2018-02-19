@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 // import { bindActionCreators } from 'redux'
 // import {Link} from 'react-router-dom';
 
@@ -15,7 +15,8 @@ class Categories extends React.Component{
 		Yearning: false,
 		Fatigue: false,
 		Aversion: false,
-		Annoyance: false
+		Annoyance: false,
+		feelings: []
 	}
 
 	//this will update state to change the categories to true from false	
@@ -73,7 +74,7 @@ class Categories extends React.Component{
 				<br></br><button onClick={this.handleClick}>Anger</button>
 				<br></br><button onClick={this.handleClick}>Disquiet</button>
 				<br></br><button onClick={this.handleClick}>Confusion</button>
-				<br></br><button onClick={this.handleClick}>Embarrassed</button>
+				<br></br><button onClick={this.handleClick}>Embarrassment</button>
 				<br></br><button onClick={this.handleClick}>Yearning</button>
 				<br></br><button onClick={this.handleClick}>Fatigue</button>
 				<br></br><button onClick={this.handleClick}>Aversion</button>

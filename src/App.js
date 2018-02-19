@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './App.css'
-import Categories from './Components/Categories'
+// import Categories from './Components/Categories'
 // import { Route } from 'react-router-dom'
 import { withRouter } from 'react-router'
 // import Container from './Components/Container'
 import Login from './Components/Login'
-import LoginPage from './Components/LoginPageTest'
-import Auth from './auth/Auth.js'
+// import LoginPage from './Components/LoginPageTest'
+// import Auth from './auth/Auth.js'
 
 
 class App extends Component {
