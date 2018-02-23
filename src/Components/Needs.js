@@ -9,22 +9,22 @@ const CONNECTION =
 	'stability','support', 'to know and be known','to see and be seen',
 	'to understand and be understood','trust','warmth']
 
-const PHYSICAL = ['air', 'food','movement', 'exercise', 'rest','sleep',
-	'sexual expression', 'safety', 'shelter','touch','water']
+// const PHYSICAL = ['air', 'food','movement', 'exercise', 'rest','sleep',
+// 	'sexual expression', 'safety', 'shelter','touch','water']
 
-const HONESTY = ['authenticity','integrity','presence']
+// const HONESTY = ['authenticity','integrity','presence']
 
-const PLAY = ['joy', 'humor']
+// const PLAY = ['joy', 'humor']
 
-const PEACE = ['beauty','communion','ease','equality','harmony','inspiration','order']
+// const PEACE = ['beauty','communion','ease','equality','harmony','inspiration','order']
 
-const AUTONOMY = ['choice', 'freedom', 'independence', 'space', 'spontaneity']
+// const AUTONOMY = ['choice', 'freedom', 'independence', 'space', 'spontaneity']
 
-const MEANING = ['awareness', 'celebration of life', 'challenge','clarity', 
-	'competence', 'consciousness', 'contribution','creativity', 
-	'discovery', 'efficacy', 'effectiveness', 'growth','hope', 
-	'learning', 'mourning', 'participation', 'purpose', 'expression', 
-	'stimulation', 'to matter', 'understanding']
+// const MEANING = ['awareness', 'celebration of life', 'challenge','clarity', 
+// 	'competence', 'consciousness', 'contribution','creativity', 
+// 	'discovery', 'efficacy', 'effectiveness', 'growth','hope', 
+// 	'learning', 'mourning', 'participation', 'purpose', 'expression', 
+// 	'stimulation', 'to matter', 'understanding']
 
 
 class NeedsForm extends React.Component {
@@ -66,7 +66,17 @@ class NeedsForm extends React.Component {
       </CheckboxGroup>
       </div> 	
 
-      <div>
+      
+
+     </div>
+    );
+  }
+}
+
+export default NeedsForm
+
+/*
+<div>
     		<h3>Physical Well-Being</h3>
     		<CheckboxGroup
         name="physical"
@@ -114,9 +124,4 @@ class NeedsForm extends React.Component {
       </CheckboxGroup>
       </div>
 
-     </div>
-    );
-  }
-}
-
-export default NeedsForm
+ */

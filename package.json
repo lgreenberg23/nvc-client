@@ -5,6 +5,7 @@
   "dependencies": {
     "auth0-js": "^8.11.3",
     "auth0-lock": "^10.24.1",
+    "node-fetch": "^2.0.0",
     "react": "^16.0.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-addons-transition-group": "^15.6.2",
